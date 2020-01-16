@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>냉장고를 부탁해!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logo_i.ico" type="image/x-icon" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 로고 -->
+    <header>
+        <div class="wrap">
+            <a href="index.html"><img src="src/logo.png" id="logo" alt="logo"></a>
+        </div>
+    </header>
+
+    <!-- 자료 -->
+    <div id="check"></div>
+
+    <!-- 확인 -->
+    <section id="section-list">
+        <div class="wrap">
+            <div id="elec">
+                <div class="title middle">전력사용량</div>
+                <div class="sub-title middle"></div>
+            </div>
+            <div id="Bill">
+                <div class="title middle">전기 사용 요금</div>
+                <div class="sub-title middle"></div>
+            </div>
+            <div id="Cb">
+                <div class="title middle">탄소 배출량</div>
+                <div class="sub-title middle"></div>
+            </div>
+            <div id="time">
+                <div class="title middle">열린 시간</div>
+                <div class="sub-title middle"></div>
+            </div>
+            <div id="rfid">
+                <div class="title middle">제품 인식</div>
+                <div class="sub-title middle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 그래프 -->
+    <div id="section-graph">
+        <section id="temp">
+            <div class="title">현재 온도</div><br>
+            <div class="graph"></div>
+        </section>
+        <section id="mois">
+            <div class="title">현재 습도</div><br>
+            <div class="graph"></div>
+        </section>
+        <section id="oxy">
+            <div class="title">산소 농도</div>
+            <div class="graph"></div>
+        </section>
+    </div>
+
+    <!-- 3PMakers -->
+    <footer>
+        <div class="wrap">
+            Copyright &copy; 3PMakers
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
